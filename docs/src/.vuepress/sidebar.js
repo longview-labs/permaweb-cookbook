@@ -189,6 +189,10 @@ const getI18NSidebar = (langCode) => [
             text: "bundlr.network",
             link: get_i18n_link(langCode, "/guides/deploying-manifests/bundlr"),
           },
+          {
+            text: "arseeding-js",
+            link: get_i18n_link(langCode, "/guides/deploying-manifests/arseeding-js"),
+          },
         ],
       },
       {
