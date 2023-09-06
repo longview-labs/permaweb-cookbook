@@ -4,7 +4,7 @@ locale: zh
 # Github操作
 
 ::: danger
-本指南仅用于教育目的，您应使用它来了解您可能希望部署应用程序的选项。在本指南中，我们信任由` microsoft` 拥有的第三方资源` github` 来保护我们的秘密信息，在他们的文档中，他们使用` libsodium sealed box` 在其存储中对秘密进行加密，您可以在此处找到有关其安全实践的更多信息。https://docs.github.com/en/actions/security-guides/encrypted-secrets 
+本指南仅用于教育目的，您应使用它来了解您可能希望部署应用程序的选项。在本指南中，我们信任由` microsoft` 拥有的第三方资源` github` 来保护我们的密钥信息，在他们的文档中，他们使用` libsodium sealed box` 在其存储中对密钥进行加密，您可以在此处找到有关其安全实践的更多信息。https://docs.github.com/en/actions/security-guides/encrypted-secrets 
 :::
 
 Github Actions是CI/CD流水线，允许开发人员通过生成的来自github工作流系统的事件触发自动化任务。这些任务可以是任何事情，在本指南中，我们将展示如何使用github操作将您的永久网络应用程序部署到永久网络，使用bundlr和ArNS。
@@ -111,7 +111,7 @@ jobs:
 
 ## 总结
 
-在项目存储库中，转到设置和秘密，添加一个名为PERMAWEB_KEY的新秘密到存储库，此项目的秘密值应是部署钱包的base64编码字符串。
+在项目存储库中，转到设置和密钥，添加一个名为PERMAWEB_KEY的新密钥到存储库，此项目的密钥值应是部署钱包的base64编码字符串。
 
 ```console
 base64 -i wallet.json | pbcopy
