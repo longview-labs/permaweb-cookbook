@@ -19,6 +19,3 @@ locale: zh
 
 * [Hello World（无代码）](./quick-starts/hw-no-code.md)
 * [Hello World（CLI）](./quick-starts/hw-cli.md)
-
----
-校对完成 by webb
