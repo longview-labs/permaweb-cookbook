@@ -36,4 +36,4 @@ Permaweb Cookbook分为不同的部分，每个部分都针对不同的目标。
 
 这些是一些小指南，帮助开发者从各个经验水平开始在Permaweb上发布代码。
 
-- [你好，世界（无代码）](getting-started/quick-starts/hw-no-code.md)
+- [Hello World（无代码）](getting-started/quick-starts/hw-no-code.md)
