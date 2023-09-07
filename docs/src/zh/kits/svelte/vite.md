@@ -235,7 +235,7 @@ yarn deploy
 如果您的应用程序大小超过 120 KB，您需要为 bundlr 钱包充值资金。请参考  [https://bundlr.network](https://bundlr.network) 以获取更多信息。
 :::
 
-## 存储库
+## 代码库
 
 您可以在此处找到此示例的完整版本：[https://github.com/twilson63/svelte-ts-vite-example](https://github.com/twilson63/svelte-ts-vite-example)
 
