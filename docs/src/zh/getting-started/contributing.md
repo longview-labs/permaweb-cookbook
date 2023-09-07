@@ -59,5 +59,4 @@ Arch_Druid
 ## 关于贡献的更多信息，请查阅仓库的风格指南
 
 [CONTRIBUTING](https://github.com/twilson63/permaweb-cookbook/blob/main/CONTRIBUTING.md)
----
-校对完成 by webb
+
