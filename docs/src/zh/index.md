@@ -9,7 +9,7 @@ Permaweb Cookbook 是一个开发者资源，提供了在Permaweb上构建应用
 
 ## 开发者
 
-欢迎来到Arweave开发社区，过去永远镌刻在区块链上，未来充满无限可能。让我们一起建设去中心化的Web！
+欢迎来到Arweave开发社区，在这里过去会永远镌刻在区块链上，未来充满无限可能。让我们一起建设去中心化的Web！
 
 [了解更多](getting-started/welcome.md)
 
