@@ -1,7 +1,7 @@
 ---
 locale: zh
 ---
-# 交易的完整GraphQL结构
+# 完整的交易GraphQL结构
 下面的GraphQL查询返回由索引服务捕获的交易的所有属性。
 
 ```graphql:no-line-numbers
@@ -145,7 +145,7 @@ query
 为了检索整个结果集，请重复使用每个页面中最后一项的`after`查询，并更新`cursor`值，直到`hasNextPage`为`false`为止。
 
 ## 速率限制
-索引服务将实施速率限制以防止攻击和滥用其服务。`arweave.net/graphql`服务将GraphQL查询限制为每5分钟的600个查询（每个IP地址）。在解析响应之前，始终检查查询结果是否具有200s的状态代码。状态代码为429表示正在执行速率限制。状态代码为503通常表示查询结果集对于`arweave.net/graphql`来说太大。
+索引服务将实施速率限制以防止攻击和滥用其服务。`arweave.net/graphql`服务将GraphQL查询限制为每5分钟的600个查询（每个IP地址）。在解析响应之前，始终检查查询结果是否具有200的状态代码。状态代码为429表示正在执行速率限制。状态代码为503通常表示查询结果集对于`arweave.net/graphql`来说太大。
 
 ## 资源
 * 有关更完整的Arweave GraphQL模式列表，请参阅[Arweave GraphQL指南](https://gql-guide.arweave.dev)
