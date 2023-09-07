@@ -7,7 +7,7 @@ Svelte是一个编译成JavaScript捆绑包的框架，同时从应用程序的�
 
 Svelte起始套件指南：
 
-* [最低限度](./minimal.md) - 构建Svelte PermaWeb应用程序所需的最低要求
+* [Minimal](./minimal.md) - 构建Svelte PermaWeb应用程序所需的最低要求
 * [Vite](./vite.md) - Svelte，Typescript和Vite
 
 ::: info PermaWeb应用程序限制条件
