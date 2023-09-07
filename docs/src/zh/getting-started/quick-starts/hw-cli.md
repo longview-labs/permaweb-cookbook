@@ -1,7 +1,7 @@
 ---
 locale: zh
 ---
-# 你好，世界（命令行界面）
+# Hello World（CLI）
 
 本指南将引导您通过命令行界面（CLI）以最简单的方式将数据上传到永久网络（permaweb）。
 
