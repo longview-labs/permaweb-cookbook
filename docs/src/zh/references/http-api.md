@@ -1,19 +1,19 @@
 ---
 locale: zh
 ---
-# Arweave peer HTTP API
-有关Arweave peer HTTP API的更完整的参考，请参阅[链接指南](https://docs.arweave.org/developers/server/http-api)。
+# Arweave 节点 HTTP API
+有关Arweave 节点 HTTP API的更完整的参考，请参阅[链接指南](https://docs.arweave.org/developers/server/http-api)。
 
 这里列出的端点是为方便或者因为在[链接指南](https://docs.arweave.org/developers/server/http-api)中被省略的而提供的。
 
 ::: info
-Permaweb网关服务通常由一个或多个完整的Arweave节点支持。因此，它们通常在`/tx/`路径下公开节点端点，并将请求直接路由到Arweave节点上。这意味着这些方法通常可以在网关上调用，也可以直接在arweave对等节点上调用。
+Permaweb网关服务通常由一个或多个完整的Arweave节点支持。因此，它们通常在`/tx/`路径下公开节点端点，并将请求直接路由到Arweave节点上。这意味着这些方法既可以在网关上调用，也可以直接在arweave节点上调用。
 :::
 
 <hr />
 
 ### 根据字段获取
-直接从Arweave节点检索与事务关联的标头字段。如果节点存储块，并且数据足够小以供节点提供服务，则可以用于检索事务数据。
+直接从Arweave节点检索与事务关联的标头字段。如果节点存储了数据块，并且数据的大小满足节点提供服务的能力，则可以用于检索事务数据。
 
 `https://arweave.net/tx/TX_ID/FIELD`
 
@@ -58,10 +58,10 @@ console.log(res.data / 1000000000000)
 ```
 <hr />
 
-### 获取事务状态
+### 获取交易状态
 `https://arweave.net/tx/TX_ID/status`
 ::: tip
-此端点仅支持基本的Arweave事务，不支持捆绑事务。在事务的状态可用之前，必须在链上确认事务。
+此端点仅支持基本的Arweave交易，不支持捆绑（bundled）交易。交易必须在链上被确认后，交易的状态才可用。
 :::
 
 ```js
