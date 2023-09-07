@@ -3,13 +3,13 @@ locale: zh
 ---
 # 贡献流程
 
-我们欢迎社区中的任何人为Permaweb Cookbook做出贡献，作为社区成员，我们希望有一个高质量的参考指南，其中包含了一些小块的信息片段。以下是任何人可以为这个项目做出贡献的逐步流程。
+我们欢迎社区中的任何人为Permaweb Cookbook做出贡献，作为社区成员，我们希望有一个高质量的参考指南，其中包含了一些小块的信息片段。以下是如何为这个项目做出贡献的流程。
 
 ## 需要了解什么？
 
 * Git和Github - 将内容发布到github.com。
 * Markdown - Markdown是一种基于文本的标记语言，可以转换为HTML。
-* Arweave和Permaweb - 对应该分享的Permaweb有一些了解。
+* Arweave和Permaweb - 对Permaweb有一些了解。
 
 ## 贡献步骤
 
@@ -51,7 +51,7 @@ dmac
 
 
 ::: 提示
-概念和参考数据应该具有更冷板条科学的语气，指南应该是一种支持性甚至幽默的语气。长形式的内容需要吸引读者，不要让他们走神。
+概念和参考数据应该具有更严谨科学的语气，指南应该是一种支持性甚至幽默的语气。长形式的内容需要吸引读者，不要让他们走神。
 
 Arch_Druid
 :::
@@ -59,3 +59,5 @@ Arch_Druid
 ## 关于贡献的更多信息，请查阅仓库的风格指南
 
 [CONTRIBUTING](https://github.com/twilson63/permaweb-cookbook/blob/main/CONTRIBUTING.md)
+---
+校对完成 by webb
