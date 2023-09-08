@@ -1,11 +1,11 @@
 ---
 locale: zh
 ---
-# 网关
+# 网关（Gateways）
 
 ---
 
-上传到Arweave网络（或[永久网](https://cookbook.arweave.dev/concepts/permaweb.html)）的数据并不总是立即易于处理。
+上传到Arweave网络（或[永久网](https://cookbook.arweave.dev/concepts/permaweb.html)）的数据并不是立即可用的。
 
 ### 什么是网关？
 
