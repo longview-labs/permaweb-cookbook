@@ -19,7 +19,7 @@ console.log(result.cachedValue.state)
 
 ## 高级读取状态
 
-某些合约要么读取其他合约的状态，要么在请求这些合约的状态时调用或写入其他合约的状态，这时需要设置评估选项。
+有些合约要么读取其他合约的状态，要么调用或写入其他合约，当请求这些合约的状态时，需要设置评估选项。
 
 ```ts
 const warp = WarpFactory.forMainnet()
@@ -54,4 +54,4 @@ const { sortKey, cachedValue } = await contract.readState(1090111)
 
 ## 总结
 
-通过拉取所有交互并通过fold方法处理每个交互，读取SmartWeave合约的当前状态可以执行状态评估。这种方法是permaweb独有的，需要对您的SmartWeave合约代码执行方式有独特的理解。
+通过拉取所有交互并通过 fold 方法处理每个交互，读取 SmartWeave 合约的当前状态可以执行状态评估。这种方法是 permaweb 独有的，需要对您的 SmartWeave 合约代码执行方式有独特的理解。
