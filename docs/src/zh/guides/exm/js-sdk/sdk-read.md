@@ -3,7 +3,7 @@ locale: zh
 ---
 # 通过 Execution Machine SDK 从无服务函数中读取
 
-有两种方法可以从 EXM（Execution Machine）无服务函数中读取状态。如在 [介绍](../intro.md#serverless-functions-on-arweave) 中所述，EXM 将函数存储在缓存层以便快速提供应用程序，但也将函数上传到 Arweave 以维护分散性及其相关的优势。因此，函数状态可以从 EXM 的缓存层或直接从 Arweave 中读取。
+有两种方法可以从 EXM（Execution Machine）无服务函数(serverless function)中读取状态。如在 [介绍](../intro.md#serverless-functions-on-arweave) 中所述，EXM 将函数存储在缓存层以便快速提供应用程序，但也将函数上传到 Arweave 以维护分散性及其相关的优势。因此，函数状态可以从 EXM 的缓存层或直接从 Arweave 中读取。
 
 1. 从 EXM 的缓存层读取：
 
