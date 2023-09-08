@@ -3,7 +3,7 @@ locale: zh
 ---
 # 核心概念
 
-Arweave和永久网络的基础知识。
+Arweave和永久网络(permaweb)的基础知识。
 
 - [发布交易](post-transactions.md)
 - [元数据（标签）](tags.md)
