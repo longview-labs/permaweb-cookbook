@@ -1,7 +1,7 @@
 ---
 locale: zh
 ---
-# 交易捆绑（Transaction Bundles）
+# 交易捆绑/交易打包（Transaction Bundles）
 
 ### 什么是捆绑？
 
