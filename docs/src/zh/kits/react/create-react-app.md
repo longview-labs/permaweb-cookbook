@@ -5,21 +5,21 @@ locale: zh
 
 本指南将以逐步流程指导您配置开发环境以构建和部署永久Web反应应用程序。
 
-先决条件
+## 先决条件
 
 - 基本的Typescript知识（可选）- [https://www.typescriptlang.org/docs/](学习Typescript)
 - NodeJS v16.15.0或更高版本-[https://nodejs.org/en/download/](下载NodeJS)
 - 了解ReactJS-[https://reactjs.org/](学习ReactJS)
 - 了解git和常用的终端命令
 
-开发依赖
+## 开发依赖
 
 - TypeScript
 - NPM或Yarn软件包管理器
 
-步骤
+## 步骤
 
-创建项目
+### 创建项目
 
 如果您对typescript不熟悉，可以排除额外的检查 `--template typescript`
 
@@ -40,13 +40,13 @@ yarn create react-app permaweb-create-react-app --template typescript
   </CodeGroupItem>
 </CodeGroup>
 
-转到项目目录
+## 转到项目目录
 
 ```sh
 cd permaweb-create-react-app
 ```
 
-安装react-router-dom
+### 安装react-router-dom
 
 您必须安装此软件包以管理不同页面之间的路由
 
@@ -68,7 +68,7 @@ yarn add react-router-dom -D
 </CodeGroup>
 
 
-运行应用程序
+### 运行应用程序
 
 现在，在进入下一步之前，我们需要检查一切是否正常，运行
 <CodeGroup>
@@ -91,7 +91,7 @@ yarn start
 它可能会要求您切换到终端中的另一个可用端口
 
 
-修改package.json以包含以下配置
+### 修改package.json以包含以下配置
 
 ```json
 {
@@ -100,7 +100,7 @@ yarn start
 }
 ```
 
-设置路由
+### 设置路由
 
 现在修改应用程序并添加一个新的路由，如关于页面，首先创建2个其他的.tsx文件。（如果您已排除额外的检查 `--template typescript`，那么您的组件文件扩展名应为 `.jsx` 或 `.js`）
 
@@ -109,7 +109,7 @@ touch src/HomePage.tsx
 touch src/About.tsx
 ```
 
-HomePage.tsx
+#### HomePage.tsx
 
 ```ts
 import { Link } from "react-router-dom";
@@ -128,7 +128,7 @@ function HomePage() {
 export default HomePage;
 ```
 
-About.tsx
+#### About.tsx
 
 ```ts
 import { Link } from "react-router-dom";
@@ -147,7 +147,7 @@ function About() {
 export default About;
 ```
 
-修改App.tsx
+#### 修改App.tsx
 
 我们需要更新App.tsx以管理不同的页面
 
@@ -174,13 +174,13 @@ export default App;
 
 ::: info Hash Routing
 请注意，我们将路由包装在HashRouter中，并使用react-router-dom的Link组件来构建链接。
-由于当前处于永久Web的状态，这是很重要的，这将确保路由正常工作，因为应用程序
+这对permaweb当前状态来说非常重要，这将确保路由正常工作，因为应用程序
 使用类似于“https://[gateway]/[TX]”的路径服务
 :::
 
-永久部署
+## 永久部署
 
-生成钱包
+### 生成钱包
 
 我们需要`arweave`软件包来生成一个钱包
 
@@ -207,7 +207,7 @@ yarn add arweave -D
 node -e "require('arweave').init({}).wallets.generate().then(JSON.stringify).then(console.log.bind(console))" > wallet.json
 ```
 
-设置bundlr
+### 设置bundlr
 
 我们需要Bundlr来将应用程序部署到Permaweb，它提供了即时的数据上传和检索
 
@@ -232,7 +232,7 @@ yarn global add @bundlr-network/client
 您需要将AR添加到该钱包中，并为其充值以能够上传此应用程序。查看[https://bundlr.network](https://bundlr.network)和[https://www.arweave.org/](https://www.arweave.org/)了解更多信息。
 :::
 
-更新package.json
+### 更新package.json
 
 ```json
 {
@@ -245,7 +245,7 @@ yarn global add @bundlr-network/client
 }
 ```
 
-运行构建
+### 运行构建
 
 现在是生成构建的时候了，运行
 
@@ -266,7 +266,7 @@ yarn build
   </CodeGroupItem>
 </CodeGroup>
 
-运行部署
+### 运行部署
 最后，我们可以部署我们的第一个Permaweb应用程序
 
 <CodeGroup>
@@ -286,12 +286,12 @@ yarn deploy
   </CodeGroupItem>
 </CodeGroup>
 
-::: tip 成功
+::: tip **成功**
 您现在应该在Permaweb上拥有一个React应用程序！做得好！
 :::
 
-::: info 错误
-如果收到此错误 `Not enough funds to send data`，您需要将一些AR充值到Bundlr钱包中，然后尝试重新部署，运行
+::: info **错误**
+如果收到错误 `Not enough funds to send data`，您需要将一些AR充值到Bundlr钱包中，然后尝试重新部署运行
 :::
 
 <CodeGroup>
@@ -315,10 +315,10 @@ bundlr fund 1479016 -h https://node1.bundlr.network -w wallet.json -c arweave
 上述数字1479016是以winston表示的AR金额，AR的最小单位。此操作需要一些时间传播到Bundlr钱包。请在10-20分钟后返回，然后尝试再次部署。
 :::
 
-存储库
+## 存储库
 
 此示例的完整版本可在此处找到：[https://github.com/VinceJuliano/permaweb-create-react-app](https://github.com/VinceJuliano/permaweb-create-react-app)
 
-摘要
+## 摘要
 
 这是发布React应用程序在Permaweb上的创建React App版本。您可以发现在Permaweb上部署应用程序的新方式，或者在本指南中找到其他入门套件！

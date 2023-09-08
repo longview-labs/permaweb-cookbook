@@ -9,7 +9,7 @@ Permaweb Cookbook 是一个开发者资源，提供了在Permaweb上构建应用
 
 ## 开发者
 
-欢迎来到Arweave开发社区，过去永远镌刻在区块链上，未来充满无限可能。让我们一起建设去中心化的Web！
+欢迎来到Arweave开发社区，在这里过去会永远镌刻在区块链上，未来充满无限可能。让我们一起建设去中心化的Web！
 
 [了解更多](getting-started/welcome.md)
 
@@ -36,4 +36,4 @@ Permaweb Cookbook分为不同的部分，每个部分都针对不同的目标。
 
 这些是一些小指南，帮助开发者从各个经验水平开始在Permaweb上发布代码。
 
-- [你好，世界（无代码）](getting-started/quick-starts/hw-no-code.md)
+- [Hello World（无代码）](getting-started/quick-starts/hw-no-code.md)

@@ -4,7 +4,7 @@ locale: zh
 # ArProfile（Ar个人资料）
 ArProfile是Arweave的本地DID（去中心化身份标识）。
 
-底层账户协议旨在满足用户之间社交互动的基本需求：头像、唯一名称、用户名和简介。它还包括向来自Twitter、Discord、Github、Instagram和Facebook等众所周知的社交网络添加账户的可能性。
+底层账户协议旨在满足用户之间社交互动的基本需求：头像、唯一名称、用户名和简介。它还可以添加来自 Twitter、Discord、Github、Instagram 和 Facebook 等知名社交网络的帐户。
 
 ## 安装
 使用npm添加包：
@@ -45,7 +45,7 @@ const opts = {
 :::
 
 #### 通过地址获取个人资料
-要使用Arweave地址检索账户信息，在异步函数内将用户地址传递给“get”函数
+要使用 Arweave 地址检索账户信息，在异步函数内将用户地址传递给“get”函数
 
 ```js:no-line-numbers
 await account.get("aIUmY9Iy4qoW3HOikTy6aJww-mM4Y-CUJ7mXoPdzdog")

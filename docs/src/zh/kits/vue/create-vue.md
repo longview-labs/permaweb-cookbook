@@ -82,7 +82,7 @@ cd <your-project-name>
 
 ### 设置路由器
 
-Vue Router是Vue.js的官方路由器，可以与Vue无缝集成。为了使其与Permaweb配合使用，在您的`src/router/index.ts`或`src/router/index.js`文件中，将浏览器历史路由器改为哈希路由器，因为无法将URL发送到服务器。将`createWebHistory`更改为`createWebHashHistory`。
+Vue Router是Vue.js的官方路由器，可以与Vue无缝集成。为了使其与Permaweb配合使用，将浏览器历史路由器改为哈希路由器，因为URL无法被发送到服务器。在您的`src/router/index.ts`或`src/router/index.js`文件中将`createWebHistory`更改为`createWebHashHistory`。
 
 ```ts
 import { createRouter，createWebHashHistory } from 'vue-router'

@@ -1,11 +1,11 @@
 ---
 locale: zh
 ---
-# 路径清单
+# 路径清单（Path Manifests）
 
 ## 概述
 
-当向Arweave上传文件时，每个文件都被分配一个唯一的交易ID。默认情况下，这些ID没有以任何特定的方式进行分组或组织。
+当向Arweave上传多个文件时，每个文件都被分配一个唯一的交易ID。默认情况下，这些ID没有以任何特定的方式进行分组或组织。
 
 例如，您上传的猫的一张图片可能具有交易ID为[bVLEkL1SOPFCzIYi8T_QNnh17VlDp4RylU6YTwCMVRw](https://arweave.net/bVLEkL1SOPFCzIYi8T_QNnh17VlDp4RylU6YTwCMVRw)，而另一张图片具有交易ID为[FguFk5eSth0wO8SKfziYshkSxeIYe7oK9zoPN2PhSc0](https://arweave.net/FguFk5eSth0wO8SKfziYshkSxeIYe7oK9zoPN2PhSc0)。
 
@@ -18,7 +18,7 @@ locale: zh
 
 路径清单是一种将多个交易链接到单个基本交易ID并为它们赋予人类可读的文件名的方法。以猫的例子来说，您可以拥有一个基本交易ID来像文件夹一样保存所有图片 - 使用更容易记住的文件名来访问您的猫图片，例如[{基本ID}/猫1.jpg](https://arweave.net/6dRh-TaiA5qtd0NWqrghpvC4_l3EtA3AwCluwPtfWVw/猫1.jpg)，[{基本ID}/猫2.jpg](https://arweave.net/6dRh-TaiA5qtd0NWqrghpvC4_l3EtA3AwCluwPtfWVw/猫2.jpg)，等等。
 
-创建分组的可读文件名集合对于在Arweave上创建实用的应用程序至关重要，它还可以解锁托管网站或其他文件集合的能力，如下面的示例所探讨的。
+创建分组的可读文件名集合对于在Arweave上创建实用的应用程序至关重要，它还可以有托管网站或其他文件集合的能力，如下面的示例所探讨的。
 
 ### 清单用途
 

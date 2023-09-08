@@ -2,7 +2,7 @@
 locale: zh
 ---
 # ArDB
-一个建立在GraphQL之上的库，可以在不必纪念GraphQL参数名的情况下查询arweave的交易和区块数据。只需在您喜欢的代码编辑器中使用自动完成构建查询。
+一个构建在 GraphQL 之上的库，可以从 arweave 查询交易和区块数据，而无需记住 GraphQL 参数名称。只需在您喜欢的代码编辑器中使用自动完成构建查询。
 
 ## 安装
 ```console:no-line-numbers

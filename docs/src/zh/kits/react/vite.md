@@ -304,10 +304,10 @@ yarn deploy
   </CodeGroupItem>
 </CodeGroup>
 
-::: tip 成功
+::: tip **成功**
 您现在应该在 Permaweb 上拥有一个 React 应用程序！做得好！
 :::
 
 ::: error
-如果您收到此错误 `Not enough funds to send data`，您需要在钱包中添加一些 AR，然后再尝试部署。
+如果您收到错误 `Not enough funds to send data`，您需要在钱包中添加一些 AR，然后再尝试部署。
 :::

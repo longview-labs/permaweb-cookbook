@@ -1,9 +1,9 @@
 ---
 locale: zh
 ---
-# 你好，世界（NodeJS）
+# Hello World（NodeJS）
 
-本指南将指导您使用`arweave-js`和`bundlr`的最简单方法将数据放入永久网络。
+本指南将指导您使用`arweave-js`和`bundlr`的最简单方法将数据放入永久网络（Permaweb）。
 
 由于Arweave 2.6每个区块仅允许1000个项目，直接发布到网关（例如使用`arweave-js`）的情况可能很少见。
 
@@ -69,7 +69,7 @@ const arweave = Arweave.init({
 
 const tx = await arweave.createTransaction(
   {
-    data: "你好，世界！",
+    data: "Hello world!",
   },
   jwk
 );

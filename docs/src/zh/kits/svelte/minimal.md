@@ -123,8 +123,8 @@ router.mode.hash()
 <Route path="/about"><About /></Route>
 ```
 
-::: info 哈希路由
-您会注意到脚本会话中的`router.mode.hash()`设置，在配置应用程序使用基于哈希的路由时是很重要的。这将使得在将应用程序运行到路径上时（如`https://[gateway]/[TX]`），能够支持URL。
+::: info **哈希路由**
+您会注意到脚本会话中的`router.mode.hash()`设置，这在配置应用程序使用基于哈希的路由时是很重要的。这使得将应用程序运行时能够支持URL路径（如`https://[gateway]/[TX]`）。
 :::
 
 
@@ -184,11 +184,11 @@ yarn add -D @bundlr-network/client
 yarn deploy
 ```
 
-::: tip 成功
+::: tip **成功**
 您现在应该在永久网络上拥有一个Svelte应用程序！做得好！
 :::
 
-::: warning 资金钱包
+::: warning **资金钱包**
 如果您的应用程序大于120 KB，您将需要为您的bundlr钱包提供资金。请参阅[https://bundlr.network](https://bundlr.network)获取更多信息。
 ::: 
 

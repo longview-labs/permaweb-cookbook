@@ -126,7 +126,7 @@ const results = await arweave.api.post('/graphql', queryObject);
 ```
 
 ## 多个查询
-可以在单次往返到GraphQL端点中提交多个查询。此示例查询了两个钱包地址的“name”交易（每个查询分别查询），使用现在已被“ar-profile”替代但仍然持久的“arweave-id”协议。
+可以在单次往返到GraphQL 链接点中提交多个查询。此示例查询了两个钱包地址的“name”交易（每个查询分别查询），使用现在已被“ar-profile”替代但仍然持久的“arweave-id”协议。
 ```graphql:no-line-numbers
 query {
 	account1: transactions(first: 1, owners:["89tR0-C1m3_sCWCoVCChg4gFYKdiH5_ZDyZpdJ2DDRw"],

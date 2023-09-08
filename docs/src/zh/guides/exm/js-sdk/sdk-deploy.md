@@ -3,7 +3,7 @@ locale: zh
 ---
 # 使用 Execution Machine SDK 部署无服务器函数
 
-对于使用 JavaScript 中的 SDK 部署无服务器函数，我们在这里创建一个脚本，告诉计算机如何将我们的函数部署到网络上。
+对于使用 JavaScript 中的 SDK 部署无服务器函数(serverless function)，我们在这里创建一个脚本，告诉计算机如何将我们的函数部署到网络上。
 
 <details>
 <summary><strong>函数逻辑示例</strong></summary>

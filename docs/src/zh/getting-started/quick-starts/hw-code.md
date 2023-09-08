@@ -1,7 +1,7 @@
 ---
 locale: zh
 ---
-# 你好，世界（代码）
+# Hello World（代码）
 
 本指南将指导您如何使用几行代码和[命令行界面（CLI）](./hw-cli.md)快速将一个静态HTML、CSS和JavaScript网页上载到区块链上。
 

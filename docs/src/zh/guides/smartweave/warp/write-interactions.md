@@ -3,7 +3,7 @@ locale: zh
 ---
 # Warp WriteInteractions
 
-要在SmartWeave合约上调用一个函数，你可以创建一个被称为SmartWeave操作的交易。这个操作包括函数名和SmartWeave合约上函数所需的输入参数。你可以使用contract.writeInteraction函数创建一个SmartWeave操作。
+要调用 SmartWeave 合约上的函数，您可以创建一个称为 SmartWeave 操作的交易。此操作包括 SmartWeave 合约上函数的函数名称和必要的输入参数。您可以使用 Contract.writeInteraction 函数创建 SmartWeave 操作。
 
 ## 代码
 
@@ -25,7 +25,7 @@ async function doStamp() {
 }
 ```
 
-在调用writeInteraction时，你需要传递输入参数。这些参数是合约期望接收的参数。
+在调用 writeInteraction 时，你需要传递输入参数。这些参数是合约期望接收的参数。
 
 ::: warning
 由于SmartWeave合约在惰性流中进行评估，你在评估合约到当前状态之前无法知道你的操作是否成功执行。使用[Warp readState](./readstate.md)来访问合约并确定操作是否成功应用。
@@ -33,7 +33,7 @@ async function doStamp() {
 
 ## 模拟写入
 
-`DryWrite`允许您在当前状态上测试和验证一个交互，而不必在永久网络上执行它。这个功能允许您在本地模拟交互并确保它在应用之前会成功。
+`DryWrite`允许您在当前状态上测试和验证一个交互，而不必在永久网络(permaweb)上执行它。这个功能允许您在本地模拟交互并确保它在应用之前会成功。
 
 ```ts
 import { WarpFactory } from 'warp-contracts'
@@ -54,7 +54,7 @@ async function doStamp() {
 ```
 
 ::: warning
-在使用模拟写入时需要注意的一点是，对于使用readState或internalWrites的合约，需要在本地评估整个状态。这可能会导致执行速度较慢。
+在使用模拟写入时需要注意的一点是，对于使用 readState 或 internalWrites 的合约，需要在本地评估整个状态。这可能会导致执行速度较慢。
 :::
 
 ## 速度优化

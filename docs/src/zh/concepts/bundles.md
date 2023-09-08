@@ -1,7 +1,7 @@
 ---
 locale: zh
 ---
-# 交易捆绑
+# 交易捆绑/交易打包（Transaction Bundles）
 
 ### 什么是捆绑？
 
@@ -9,7 +9,7 @@ locale: zh
 
 交易捆绑是一种特殊类型的Arweave交易。它可以将多个其他交易和/或数据项捆绑在其中。由于交易捆绑包含许多嵌套交易，它们是Arweave能够扩展到每秒数千个交易的关键。
 
-用户将交易提交给捆绑服务，例如[Bundlr.network](https://bundlr.network)，该服务将它们与其他交易组合成一个'bundle'（捆绑），然后将其发布到网络上。
+用户将交易提交给捆绑服务器，例如[Bundlr.network](https://bundlr.network)，该服务将它们与其他交易组合成一个'bundle'（捆绑），然后将其发布到网络上。
 
 ### 捆绑如何帮助Arweave？
 

@@ -78,7 +78,7 @@ arkb fund-bundler [金额] --use-bundler [bundlr节点]
 arkb wallet-save [钱包路径]
 ```
 
-保存密钥后，您现在可以像这样运行没有--wallet-file选项的命令
+保存密钥后，您现在可以像这样运行不带 --wallet-file 选项的命令
 
 ```console
 arkb deploy [目录路径]

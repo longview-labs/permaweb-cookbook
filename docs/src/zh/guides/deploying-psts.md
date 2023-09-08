@@ -48,7 +48,7 @@ SmartWeave合约可以分为两个部分：
 
 ```
 
-此配置为PST设置了一些初始选项。将其保存为 `初始状态.json`。
+此配置为PST设置了一些初始选项。将其保存为 `initial-state.json`。
 
 - **`ticker`** - 代币的符号（例如BTC，ETH）
 - **`name`** - 代币的名称
@@ -211,7 +211,7 @@ const initialState = {
   },
 };
 ```
-如果您使用的是钱包，您可以直接编辑 `初始状态.json` 文件以使用您的钱包地址。
+如果您使用的是钱包，您可以直接编辑 `initial-state.json` 文件以使用您的钱包地址。
 
 以下代码处理合约的部署：
 
@@ -228,7 +228,7 @@ console.log('部署完成：', {
 });
 ```
 
-运行 `node deploy-contract.js` 脚本，它会部署您的合约，并将合约事务 ID 记录在终端中供您使用。
+运行 `node deploy-contract.js` 脚本，它会部署您的合约，并将合约交易 ID 记录在终端中供您使用。
 
 ---
 

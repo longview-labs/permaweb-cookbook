@@ -3,7 +3,7 @@ locale: zh
 ---
 # Svelte/Vite 起始套件
 
-Svelte 是一個可以編譯成小型套件的框架，非常適合用於永久網頁。作為開發者，我們重視開發體驗和使用者體驗。此套件使用 `vite` 打包系統，為開發者提供優秀的開發體驗。
+Svelte 是一个可以编译成小型套件的框架，非常适合用于永久网页。作为开发者，我们重视开发体验和使用者体验。此套件使用 `vite` 打包系统，为开发者提供优秀的开发体验。
 
 ## 使用 Svelte、Vite 和 TypeScript 安裝 Vite
 
@@ -38,14 +38,13 @@ pnpm create vite my-perma-app --template svelte-ts
   </CodeGroupItem>
 </CodeGroup>
 
-## 專案資訊
+## 项目信息
 
-Vite 建構系統將您的 index.html 檔案放在根目錄中，這是您可以添加任何 CSS 或全局腳本相依的地方。欲了解更多有關 Vite 專案配置的資訊，請參閱 [Vite 文件](https://vitejs.dev/guide/#index-html-and-project-root)。
+Vite 构建后将 index.html 文件放在根目录中，这是您可以添加任何 CSS 或全局脚本依赖的地方。了解更多关于 Vite 项目配置的信息，请参阅 [Vite 文档](https://vitejs.dev/guide/#index-html-and-project-root)。
 
-## 設置 hash-router
+## 设置 hash-router
 
-為了建立 hash-router，我們將使用 [tinro](https://github.com/AlexxNB/tinro)。`tinro` 是一個小型的聲明式路由庫，類似於 React Router。
-
+为了建立 hash-router，我们将使用 [tinro](https://github.com/AlexxNB/tinro)。tinro 是一个小型的声明式路由库，类似于 React Router。
 <CodeGroup>
   <CodeGroupItem title="NPM">
 
@@ -63,9 +62,9 @@ yarn add -D tinro
   </CodeGroupItem>
 </CodeGroup>
 
-## 設定 Svelte 使用 hash routing
+## 设置 Svelte 使用 hash routing
 
-在 `src/App.svelte` 檔案中，您可以將路由器配置為使用 hash 路由模式。
+在 `src/App.svelte` 文件中，您可以将路由器配置为使用 hash 路由模式。
 
 ```html
 <script lang="ts">
@@ -78,14 +77,14 @@ yarn add -D tinro
 </main>
 ```
 
-`router.mode.hash` 函式會啟用 hash 路由模式。
-`router.subscribe` 回調函式將頁面重置到頂部以實現順暢的頁面轉換效果。
+`router.mode.hash` 函数打开 hash 路由模式。
+`router.subscribe` 回调函数将页面重置到顶部以实现顺畅的页面转换效果。
 
-## 添加一些轉場元件
+## 添加一些转场组件
 
-這些元件將在頁面路由時處理從一個頁面到另一個頁面的轉場效果。
+这些组件将在页面路由时处理从一个页面到另一个页面的转场效果。
 
-在 `src` 目錄下創建一個名為 `components` 的子目錄，並添加以下兩個檔案：
+在 `src` 目录下创建一个名为 `components` 的子目录，并添加以下两个文件：
 
 announcer.svelte
 
@@ -116,7 +115,7 @@ announcer.svelte
 </style>
 ```
 
-> 此元件用於屏幕閱讀器在頁面變更時進行提示。
+> 此组件用于屏幕阅读器在页面变更时进行提示。
 
 transition.svelte
 
@@ -133,9 +132,9 @@ transition.svelte
 {/key}
 ```
 
-> 此元件在頁面轉場時添加淡入淡出效果。
+> 此组件在页面转场时添加淡入淡出效果。
 
-## 添加路由到應用程式
+## 添加路由到应用程序
 
 ```html
 <script lang="ts">
@@ -155,9 +154,9 @@ transition.svelte
 </Transition>
 ```
 
-將 Announcer 和 Transition 元件添加到我們的路由系統中，可以處理頁面轉場時的提示和動畫效果。
+将 Announcer 和 Transition 元件添加到我们的路由系统中，可以处理页面转场时的提示和动画效果。
 
-## 創建一些頁面
+## 创建一些页面
 
 ### home.svelte
 
@@ -195,9 +194,9 @@ function inc() {
 ...
 ```
 
-## 部署到永久網頁
+## 部署到永久网
 
-### 生成錢包
+### 生成钱包
 
 ```sh
 yarn add -D arweave
@@ -222,24 +221,24 @@ yarn add -D @bundlr-network/client
 }
 ```
 
-### 執行部署
+### 执行部署
 
 ```sh
 yarn deploy
 ```
 
 ::: tip 成功 
-您現在在永久網頁上擁有一個 Svelte 應用程式！做得好！
+您现在在永久网页上拥有一个 Svelte 应用程序！做得好！
 :::
 
 ::: warning 為錢包充值資金
-如果您的應用程式大小超過 120 KB，您需要為 bundlr 錢包充值資金。請參考 [https://bundlr.network](https://bundlr.network) 以獲取更多資訊。
+如果您的应用程序大小超过 120 KB，您需要为 bundlr 钱包充值资金。请参考  [https://bundlr.network](https://bundlr.network) 以获取更多信息。
 :::
 
-## 存放庫
+## 代码库
 
-您可以在此處找到此示例的完整版本：[https://github.com/twilson63/svelte-ts-vite-example](https://github.com/twilson63/svelte-ts-vite-example)
+您可以在此处找到此示例的完整版本：[https://github.com/twilson63/svelte-ts-vite-example](https://github.com/twilson63/svelte-ts-vite-example)
 
-## 總結
+## 总结
 
-這是在永久網頁上發布 Svelte 應用程式的最小版本，但您可能需要更多功能，例如熱重新載入和 Tailwind 等。請查看 `hypar` 獲得一個即插即用的起始套件。[HypAR](https://github.com/twilson63/hypar)
+这是在永久网页上发布 Svelte 应用程序的最小版本，但您可能需要更多功能，例如热重新加载和 Tailwind 等。请查看 hypar 获取一个即插即用的起始套件。。[HypAR](https://github.com/twilson63/hypar)
