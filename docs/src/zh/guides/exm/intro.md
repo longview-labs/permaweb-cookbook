@@ -3,7 +3,7 @@ locale: zh
 ---
 # 执行机 (EXM)
 
-**执行机 (EXM)** 是一个开发者平台，提供了创建和利用**基于区块链的（永久的）无服务器函数**的能力，无需了解或访问钱包和代币等区块链技术。
+**执行机 (EXM)** 是一个开发者平台，提供了创建和利用**基于区块链的（永久的）无服务器函数(Serverless Functions)**的能力，无需了解或访问钱包和代币等区块链技术。
 
 这进一步实现了以无摩擦的方式创建**可组合**，**不可变**和**无信任**的应用程序。
 
@@ -43,9 +43,9 @@ EXM 处理存储和执行的过程，消除了保持专用服务器的需要，�
 <br/>
 
 <details>
-<summary><strong>惰性评估的解释</strong></summary>
+<summary><strong>懒加载解释</strong></summary>
 
-![惰性评估的解释](~@source/images/exm-lazy-evaluation.png)
+![懒加载解释](~@source/images/exm-lazy-evaluation.png)
 
 <strong>惰性评估</strong>，顾名思义，是一种在区块链上惰性评估智能合约及其当前状态的方法。智能合约本身和与之的任何交互（写操作）都存储在链上，任何用户都可以访问。
 
