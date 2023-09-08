@@ -3,7 +3,7 @@ locale: zh
 ---
 # Warp (SmartWeave) SDK介绍
 
-Warp是一个流行的SmartWeave Protocol SDK。使用Warp和Bundlr，您的SmartWeave部署和交互可以非常快速。
+Warp 是一个流行的 SmartWeave Protocol SDK。使用 Warp和 Bundlr，您的 SmartWeave 部署和交互可以非常快速。
 
 ## 介绍
 
@@ -106,10 +106,10 @@ const warp = WarpFactory.custom(
 
 
 ::: 警告
-在使用本地环境时，需要在端口1984上运行arLocal。
+在使用本地环境时，需要在端口1984上运行 arLocal。
 :::
 
 
 ## 摘要
 
-本简介指南旨在帮助您设置Warp。以下指南将向您展示如何使用Warp SDK部署SmartWeave合同，如何与这些合同进行交互，以及如何发展SmartWeave合同。
+本简介指南旨在帮助您设置 Warp。以下指南将向您展示如何使用Warp SDK部署SmartWeave合同，如何与这些合同进行交互，以及如何发展SmartWeave合同。
