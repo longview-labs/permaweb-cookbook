@@ -3,7 +3,7 @@ name: publish cookbook
 on:
   push:
     branches:
-      - "main"
+      - "deploy-test"
 
 jobs:
   publish:
@@ -34,17 +34,11 @@ jobs:
           npx permaweb-deploy \
             --ant-process=${ANT_PROCESS} \
             --undername=${UNDERNAME} \
-            --arns-name=cookbook \
+            --arns-name=arweave \
             --deploy-folder=${ARTIFACTS_OUTPUT_DIR} \
             --ttl-seconds=900
         env: 
           DEPLOY_KEY: ${{ secrets.COOKBOOK }}
           ARTIFACTS_OUTPUT_DIR: ${{ steps.build_artifacts.outputs.artifacts_output_dir }}
-          ANT_PROCESS: tP8uMeEQR-zodP_jHRyLJf1K7TZtACUsBrn8wdYlGuc
-          UNDERNAME: "@"
-      - name: Discord Notification
-        uses: Ilshidur/action-discord@master
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        with:
-          args: "The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed."
+          ANT_PROCESS: x-0cW5sIftvNsfXbWNVVdZvfHXOKCyjkmVwwUEMr_WI
+          UNDERNAME: "cookbook-test"
