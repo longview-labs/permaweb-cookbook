@@ -32,6 +32,7 @@ jobs:
         id: publish_artifacts
         run: |
           npx permaweb-deploy \
+            --ant-process=${ANT_PROCESS} \
             --undername=${UNDERNAME} \
             --arns-name=arweave \
             --deploy-folder=${ARTIFACTS_OUTPUT_DIR} \
@@ -39,4 +40,5 @@ jobs:
         env: 
           DEPLOY_KEY: ${{ secrets.COOKBOOK }}
           ARTIFACTS_OUTPUT_DIR: ${{ steps.build_artifacts.outputs.artifacts_output_dir }}
+          ANT_PROCESS: x-0cW5sIftvNsfXbWNVVdZvfHXOKCyjkmVwwUEMr_WI
           UNDERNAME: "cookbook-test"
