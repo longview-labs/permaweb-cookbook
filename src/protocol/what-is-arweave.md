@@ -5,6 +5,10 @@ Arweave is a decentralized network and protocol built around the premise of long
 It is designed so that users (or developers) can pay once, and retrieve their uploaded data indefinitely without ongoing 
 maintenance payments.
 
+Arweave shares similarities with traditional blockchains, but is built on a novel data structure called **blockweave** which we'll get into later on in this section. 
+
+Even if you already understand how blockchains work, this section will prove useful to learn about Arweave's key differences (focus on storage, tokenomics, separation of concerns, etc.) and provides good context for the platform you are developing on.
+
 Arweave is not just a layer to read and write data, but also to host websites and application data, too. 
 
 Developers and users can access all public data uploaded to Arweave, and where rights defined allow, the creation of unique and interesting applications on this “data lake”.
@@ -14,8 +18,7 @@ create incentive mechanisms for people and entities all around the world to stor
 
 ## Nodes
 
-Like many other blockchains, Arweave is a network of connected computers (nodes). These nodes run the Arweave node software, which connects 
-these computers together.
+Arweave is a network of connected computers (nodes). These nodes run the Arweave node software, which connects these computers together.
 
 ## Transactions
 
@@ -29,7 +32,7 @@ Uploaded transactions are periodically grouped into **blocks**.
 
 Miners (node runners) "mine" or add new blocks to be confirmed and added to the Arweave ledger. Arweave uses a structure called **blockweave**.
 
-Arweave uses a "Proof-of-Access" based consensus algorithm, more accurately described as [SPoRA](https://coinmarketcap.com/academy/glossary/succinct-proofs-of-random-access-spora) (Succinct Proofs of Random Access). 
+Arweave uses a "Proof-of-Access" based consensus algorithm, more accurately described as **SPoA** (Succinct Proofs of Access). You can learn more about Arweave's consensus mechanism in the [Lightpaper](https://www.arweave.org/files/arweave-lightpaper.pdf).
 
 On Arweave, each new block references:
 - The previous block
