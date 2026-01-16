@@ -9,6 +9,7 @@ These tokens are not immediately distributed, but rather held to be distributed 
 
 :::tip Note
 Since Arweave’s mainnet launch (June 8th, 2018), no funds from the endowment have been utilized to incentivize miners. This demonstrates the resiliency of the network mechanism design and incentive models for storing data. Not financial or investment advice.
+:::
 
 The endowment fund is enforced at a protocol level, so it isn't controlled by an entity such as a DAO.
 
