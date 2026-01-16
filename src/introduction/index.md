@@ -1,12 +1,6 @@
-# Introduction
-
-Welcome to the Arweave cookbook!
-
-This is a comprehensive guide for developers on how Arweave works, how to generate wallets and upload data, and how to create applications.
-
 # Who is the cookbook for? 
 
-The Arweave cookbook is for anyone interested in understanding Arweave and its parts in more detail, or who wants to build applications or accomplish tasks programmatically on Arweave.
+This resource is for builders and researchers interested in understanding Arweave and its parts in more detail, including deep technical and practical guides and getting started tips.
 
 The cookbook assumes you have some familiarity with programming, and most code snippets in the [Guides](../guides/index.md) section will be provided in JavaScript/TypeScript.
 
