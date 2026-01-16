@@ -1,10 +1,16 @@
 # What is $AR?
 
-Decentralized networks such as Arweave often need an incentive mechanism.
+Decentralized networks such as Arweave often require an incentive mechanism.
 
 Nodes need a reason to store data, mine blocks, and process transactions.
 
 The main incentive mechanism for storing data is Arweave's native currency - **$AR**.
+
+## Tokenomics
+
+There are a total of **66 million** $AR that will ever be in existence. Like Bitcoin, there is a limited supply. 
+
+This can create higher demand for the token over time, as it has a limited supply. This is not investment advice, rather a supply and demand curve many are familiar with in economics.
 
 ## Transactions
 
