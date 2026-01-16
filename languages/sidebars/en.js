@@ -21,27 +21,6 @@ module.exports = [
     ],
   },
   {
-    text: "Getting Started",
-    link: "/getting-started/index.html",
-    collapsible: true,
-    children: [
-      {
-        text: "Quick Starts",
-        collapsible: true,
-        children: [
-          {
-            text: "CLI",
-            link: "/getting-started/quick-starts/hw-cli.html",
-          },
-          {
-            text: "Code",
-            link: "/getting-started/quick-starts/hw-code.html",
-          },
-        ],
-      },
-    ],
-  },
-  {
     text: "Fundamentals",
     children: [
       {
@@ -108,6 +87,27 @@ module.exports = [
     link: "/guides/index.html",
     collapsible: true,
     children: [
+      {
+    text: "Getting Started",
+    link: "/getting-started/index.html",
+    collapsible: true,
+    children: [
+      {
+        text: "Quick Starts",
+        collapsible: true,
+        children: [
+          {
+            text: "CLI",
+            link: "/getting-started/quick-starts/hw-cli.html",
+          },
+          {
+            text: "Code",
+            link: "/getting-started/quick-starts/hw-code.html",
+          },
+        ],
+      },
+    ],
+  },
       {
         text: "Wallets and Keys",
         collapsible: true,
