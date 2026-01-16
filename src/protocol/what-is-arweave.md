@@ -7,7 +7,7 @@ maintenance payments.
 
 Arweave is not just a layer to read and write data, but also to host websites and application data, too. 
 
-Developers and users can access all public data uploaded to Arweave allowing for the creation of unique and interesting applications.
+Developers and users can access all public data uploaded to Arweave, and where rights defined allow, the creation of unique and interesting applications on this “data lake”.
 
 Arweave can offer this unique proposition due to the way it is designed. It is built on common principles of blockchain technology, which 
 create incentive mechanisms for people and entities all around the world to store and serve Arweave data.
