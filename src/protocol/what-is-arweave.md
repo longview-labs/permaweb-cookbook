@@ -22,7 +22,7 @@ Arweave is a network of connected computers (nodes). These nodes run the Arweave
 
 ## Transactions
 
-Users (or developers) send **transactions** to these nodes which contain data (or a value), and are shared around the network for nodes to validate and store. 
+Users (or developers) send [**transactions**](../fundamentals/index.md) to these nodes which contain data (or a value), and are shared around the network for nodes to validate and store. 
 
 Transactions are immutable, verifiable, and tamper-proof. Together these form a public dataset that users can read and write to. Users pay for these uploads using a currency called $AR.
 
