@@ -24,7 +24,7 @@ module.exports = [
     text: "Fundamentals",
     children: [
       {
-        text: "Wallets and Keys",
+        text: "Accounts",
         link: "/fundamentals/wallets-and-keyfiles/index.html",
       },
       {
