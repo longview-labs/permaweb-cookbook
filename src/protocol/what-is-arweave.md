@@ -3,7 +3,7 @@
 Arweave is a decentralized network and protocol built around the premise of long-term, immutable data storage.
 
 It is designed so that users (or developers) can pay once, and retrieve their uploaded data indefinitely without ongoing 
-maintenance payments. This is unlike most centralized storage providers.
+maintenance payments.
 
 Arweave is not just a layer to read and write data, but also to host websites and application data, too. 
 
