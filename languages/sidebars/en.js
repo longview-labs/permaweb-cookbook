@@ -5,7 +5,6 @@ module.exports = [
   },
   {
     text: "The Arweave Protocol",
-    link: "/protocol/index.html",
     children: [
       {
         text: "What is Arweave?",
