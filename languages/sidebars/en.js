@@ -203,8 +203,6 @@ module.exports = [
   },
   {
     text: "References",
-    link: "/references/index.html",
-    collapsible: true,
     children: [
       {
         text: "Glossary",
