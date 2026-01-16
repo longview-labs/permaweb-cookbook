@@ -43,8 +43,6 @@ module.exports = [
   },
   {
     text: "Fundamentals",
-    link: "/fundamentals/index.html",
-    collapsible: true,
     children: [
       {
         text: "Wallets and Keys",
