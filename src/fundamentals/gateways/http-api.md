@@ -98,8 +98,6 @@ You can use any Arweave gateway instead of `arweave.net`:
 // Alternative gateways
 const gateways = [
   "https://arweave.net",
-  "https://arweave.world",
-  "https://arweave.live",
   "https://g8way.io",
 ];
 
